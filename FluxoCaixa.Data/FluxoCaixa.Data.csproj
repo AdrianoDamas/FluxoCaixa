@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+	  <Authors>Fluxo Caixa</Authors>
+	  <Copyright>Copyright © 2022 Fluxo Caixa</Copyright>
+	  <PackageProjectUrl>https://github.com/adrianodamas/fluxocaixa</PackageProjectUrl>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>FluxoCaixa.Data.snk</AssemblyOriginatorKeyFile>
+    <Version>2.0.0</Version>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>FluxoCaixa.Data.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\FluxoCaixa\.nuget\packages\nuvtools.common\6.5.0\contentFiles\any\net6.0\nuvtoolslogo128.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.10">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.10">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="NuvTools.Common" Version="6.5.0" />
+    <PackageReference Include="NuvTools.Data.EntityFrameworkCore" Version="6.5.0" />
+    <PackageReference Include="NuvTools.Security.Identity.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FluxoCaixa.Models\FluxoCaixa.Models.csproj" />
+  </ItemGroup>
+
+</Project>

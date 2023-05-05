@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<SignAssembly>true</SignAssembly>
+		<AssemblyOriginatorKeyFile>FluxoCaixa.Resources.snk</AssemblyOriginatorKeyFile>
+		<Authors>Fluxo Caixa</Authors>
+		<Copyright>Copyright © 2023 Fluxo Caixa</Copyright>
+		<PackageProjectUrl>https://github.com/adrianodamas/fluxocaixa</PackageProjectUrl>
+		<Version>2.0.0</Version>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Update="CampoEspecifico.Designer.cs">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>CampoEspecifico.resx</DependentUpon>
+		</Compile>
+		<Compile Update="MensagemEspecifica.Designer.cs">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>MensagemEspecifica.resx</DependentUpon>
+		</Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+		<EmbeddedResource Update="CampoEspecifico.resx">
+			<Generator>PublicResXFileCodeGenerator</Generator>
+			<LastGenOutput>CampoEspecifico.Designer.cs</LastGenOutput>
+		</EmbeddedResource>
+		<EmbeddedResource Update="MensagemEspecifica.en-US.resx">
+			<Generator></Generator>
+		</EmbeddedResource>
+		<EmbeddedResource Update="MensagemEspecifica.resx">
+			<Generator>PublicResXFileCodeGenerator</Generator>
+			<LastGenOutput>MensagemEspecifica.Designer.cs</LastGenOutput>
+		</EmbeddedResource>
+	</ItemGroup>
+
+</Project>

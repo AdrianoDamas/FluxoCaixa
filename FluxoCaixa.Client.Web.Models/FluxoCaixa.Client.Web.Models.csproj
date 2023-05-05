@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<SignAssembly>true</SignAssembly>
+		<AssemblyOriginatorKeyFile>FluxoCaixa.Client.Web.Models.snk</AssemblyOriginatorKeyFile>
+		<Authors>Fluxo Caixa</Authors>
+		<Copyright>Copyright © 2023 Fluxo Caixa </Copyright>
+		<PackageProjectUrl>https://github.com/adrianodamas/fluxocaixa</PackageProjectUrl>
+		<Version>2.0.0</Version>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Remove="NuvTools\**" />
+		<EmbeddedResource Remove="NuvTools\**" />
+		<None Remove="NuvTools\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\FluxoCaixa.Models\FluxoCaixa.Models.csproj" />
+	</ItemGroup>
+
+</Project>
