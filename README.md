@@ -8,11 +8,6 @@ Requisitos de Negócio:
 - Serviço que faça o controle de lançamentos
 - Serviço do consolidado diário
 
-## Diagramas de Modelagem de Dados e Arquitetura
-![Modelagem de Dados](BrunoMelo.FluxoCaixa.Documentacao/BrunoMelo.FluxoCaixa-Modelagem%20de%20Dados.drawio.svg)
-
-![Modelagem de Dados](BrunoMelo.FluxoCaixa.Documentacao/BrunoMelo.FluxoCaixa-Arquitetura.drawio.png)
-
 ## Iniciando aplicação
 ### Configurando banco de dados
 1. Instalar SqlLocalDB via SQL Server Express
@@ -34,18 +29,19 @@ Requisitos de Negócio:
 2.3.1. Verficar informações da instância criada:
 
     SqlLocalDB info MSSQLLocalDB
+
 2.3.2. Copiar Instance pipe name: **np:\\.\pipe\codigogerado\tsql\query**
 
 2.3.3. Substituir "(LocalDb)\\MSSQLLocalDB" pelo pipe recuperado.
 
 ### Iniciar aplicação
-1. Iniciar o serviço **BrunoMelo.FluxoCaixa.API**.
-2. Iniciar o serviço **BrunoMelo.FluxoCaixa.Client.Web**.
+1. Iniciar o serviço **FluxoCaixa.API**.
+2. Iniciar o serviço **FluxoCaixa.Client.Web**.
 
 Obs.: Clicando com o botão direito sobre a solução e acionando a opção "Set as startup project", é possível definir múltiplos projetos para inicialização e a sua ordem.
 
 ### Logando na aplicação
 Para entrar na aplicação, utilizar as credenciais abaixo:
 
-    Login: administrador@rfmelo.com
-    Senha: fluxocaixa@2022
+    Login: administrador@fluxocaixa.com
+    Senha: fluxocaixa@2023
